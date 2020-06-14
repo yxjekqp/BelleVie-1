@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>booking</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="book_index.css">
+  <link rel="stylesheet" href="book.css">
+  <script>
+    function onSubmit() {
+      alert("Reservation finished!");
+      window.location.replace("index.html");
+      return false;
+    }
+
+    function goHome(section) {
+      window.location.replace("index.html#" + section);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <header id="header" class="animated slideInDown" style="animation-delay:2.0s;">
+    <table>
+      <tr>
+        <td id="logo">Hair We Are.</td>
+        <td id="navigation">
+    
+          <!-- <a href="./index.html">portfolio</a>
+          <a href="./index.html">about</a>
+          <a href="./index.html">contact</a> -->
+
+          <a href="services.html">services</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="about.html">about</a>
+          <a href= "contact.html">contact</a>
+          <a href="Homepage.html">home</a>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <div class="wrapper">
+    <div class="container">
+      <h1>Make a reservation</h1>
+
+      <form class="form" onsubmit="return onSubmit()">
+
+        <input type="text" placeholder="First name...">
+        <input type="text" placeholder="Last name...">
+        <input type="text" placeholder="Gender...">
+        <input type="text" placeholder="Phone...">
+
+        <input type="text" placeholder="Date (JJ/MM/AAAA)...">
+
+        <input type="email" placeholder="Email..." required>
+
+        <button type="submit" id="login-button">
+          Reserve
+        </button>
+      </form>
+    </div>
+
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+
+  <script src="index.js" type="text/javascript"></script>
+  <script src="book.js" type="text/javascript"></script>
+</body>
+
+</html>
